@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="./js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="./js/manufacturers.js"></script>
+</head>
+    <div class="outer_form_div">
+        <div class="show_form_button_div">
+            <button class="show_form_button" onClick="showForm('manufacturers_form_div')">New Manufacturer</button>
+        </div>
+        <div id="manufacturers_form_div">
+            <table class="form_table">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" id="country" name="country"/></td>
+                </tr>
+                <tr>
+                    <td>Founded</td>
+                    <td><input type="date" id="founded" name="founded"/></td>
+                </tr>
+                <tr>
+                    <td><button onClick="addManufacturer()">Add New</button></td>
+                    <td><button onClick="closeForm('manufacturers_form_div')">Close</button></td>
+                </tr>
+            </table>         
+        </div> 
+    </div>
+    <div id="manufacturers_table_div">
+    </div>
+</html>

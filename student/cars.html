@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="./js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="./js/cars.js" type="text/javascript"></script>
+</head>
+<div class="outer_form_div">
+        <div class="show_form_button_div">
+            <button class="show_form_button" onClick="showForm('cars_form_div')">New Car</button>
+        </div>
+        <div id="cars_form_div">
+            <table class="form_table">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Consumption</td>
+                    <td><input type="text" id="consumption" name="consumption"/></td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td><input type="text" id="color" name="color"/></td>
+                </tr>
+                <tr>
+                    <td>Manufacturer</td>
+                    <td><input type="text" id="manufacturer" name="manufacturer"/></td>
+                </tr>
+                <tr>
+                    <td>Available</td>
+                    <td><input type="text" id="available" name="available"/></td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td><input type="number" id="year" name="year"/></td>
+                </tr>
+                <tr>
+                    <td>Horse Power</td>
+                    <td><input type="text" id="horsepower" name="horsepower"/></td>
+                </tr>
+                <tr>
+                    <td><button onClick="addCar()">Add New</button></td>
+                    <td><button onClick="closeForm('cars_form_div')">Close</button></td>
+                </tr>
+            </table>         
+        </div> 
+    </div>
+    <div id="cars_table_div">
+
+    </div>
+</html>
